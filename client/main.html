@@ -1,0 +1,39 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+
+  {{> navbar}}
+  {{> hello}}
+
+</body>
+
+<template name="hello">
+    <div class="container top-margin">
+    Hindaja abimees
+    </div>
+
+</template>
+
+<template name="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Hindaja
+                <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+            </a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Algus</a></li>
+                <li ><a href="#">Protsent</a></li>
+                <li ><a href="#">Hinded</a></li>
+                <li ><a href="#">Seaded</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><p class="navbar-text"> {{> loginButtons align="right"}}</p></li>
+                </ul>
+    </div>
+    </nav>
+</template>
